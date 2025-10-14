@@ -78,14 +78,13 @@ const Navbar = () => {
         </motion.div>
 
         {/* CTA Button */}
-        <a href="#contacts" className='cursor-pointer'>
+        <a href="#contacts" className='cursor-pointer hidden md:block bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100'>
         <motion.button 
           variants={fadeIn('left', 0.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="hidden md:block bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
         >
-          Let's connect
+          <a href="#contacts">Let's connect</a>
         </motion.button>
         </a>
       </div>
@@ -111,19 +110,22 @@ const Navbar = () => {
                   setActiveLink(link.href);
                   setIsMenuOpen(false);
                 }}
-                className={`block text-sm font-medium py-2
+                className={`flex items-center justify-center text-sm font-medium py-2
                   ${activeLink === link.href ? 'text-green-600' : 'text-gray-600 hover:text-green-900'}`}
               >
                 {link.label}
               </motion.a>
             ))}
+            <a href="#contacts" 
+            className="w-full flex items-center justify-center bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100 cursor-pointer">
             <motion.button 
               variants={fadeIn('up', 0.4)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100 cursor-pointer">
+              >
               <a href="#contacts">Let's connect</a>
             </motion.button>
+            </a>
           </motion.div>
         </motion.div>
       )}
