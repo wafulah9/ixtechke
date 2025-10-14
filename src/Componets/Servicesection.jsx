@@ -8,12 +8,14 @@ const Servicesection = () => {
     const services = [
         {
             id:1,
+            type:"website",
             title: "Web Development",
             description: "Building responsive and dynamic websites tailored to your needs.",
             icon: "🌐"
         },
         {
             id:2,
+            type:"app",   
             title: "Mobile App Development",
             description: "Creating user-friendly mobile applications for both Android and iOS platforms.",
             icon: "📱"
@@ -52,7 +54,7 @@ const Servicesection = () => {
     id='services' className="relative text-gray-600 body-font 
     bg-gradient-to-b from-gray-100 to-white py-12 px-4 sm:px16 lg:px-20
     md:px-20">
-        <motion.div 
+        <motion.div id='app'
         variants={textVariant(0.3)}
         initial="hidden"
         whileInView="show"

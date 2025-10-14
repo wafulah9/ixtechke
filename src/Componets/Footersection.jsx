@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
+import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../Utilies/motion";
 
@@ -18,27 +19,28 @@ const Footersection = () => {
             className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between">
                     <div className="mb-6 md:mb-0">
-                        <h2 className="text-xl font-bold mb-4">Company Name</h2>
+                        <h2 className="text-xl font-bold mb-4">IXTECHKE</h2>
                         <p className="text-gray-400">Your one-stop solution for tech services.</p>
                     </div>
 
                     <div className="mb-6 md:mb-0">
                         <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
                         <ul>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+                            <li><a href="#homes" className="text-gray-400 hover:text-white">Home</a></li>
+                            <li><a href="#about" className="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#company" className="text-gray-400 hover:text-white">Company</a></li>
+                            <li><a href="#services" className="text-gray-400 hover:text-white">Services</a></li>
+                            <li><a href="#contacts" className="text-gray-400 hover:text-white">Contact</a></li>
                         </ul>
                     </div>
 
                     <div className="mb-6 md:mb-0">
                         <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                            <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
-                            <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                            <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                            <a href="https://www.facebook.com/ixtechke" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                            <a href="https://x.com/ixtechke?s=21" className="text-gray-400 hover:text-white"><BsTwitterX /></a>
+                            <a href="https://www.linkedin.com/in/wafulaa-michael-03767a38a/" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
+                            <a href="http://www.tiktok.com/@ixtechke" className="text-gray-400 hover:text-white"><FaTiktok  /></a>
                         </div>
                     </div>
 

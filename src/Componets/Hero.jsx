@@ -2,7 +2,8 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../Utilies/motion";
 import { BsCalendar2HeartFill } from "react-icons/bs";
-import { RiGlobalFill } from "react-icons/ri";
+import { FaAppStore  } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 import HeroImage from '../assets/HeroImage.jpg';
 
@@ -35,30 +36,35 @@ const Hero = () => {
           lg:gap-48 items-center lg:items-start text-gray-600 max-w-md z-50">
             <div className='bg-white w-72  rounded-3xl p-6 border
             border-gray-100 shadow-xl lg:shadow-2xl transtion'>
+              <a href="#app">
                 <div className='ml-4 w-10 h-10 flex items-center justify-center
                 rounded-lg bg-pink-100 mb-4 '>
-                    <BsCalendar2HeartFill  className='text-red-600'/>
+                    <a href="#app"><CgWebsite  className='text-red-600'/></a>
                 </div>
-                <h3 className='text-lg font-semibold mb-2'>Our Mission</h3>
+                <h3 className='text-lg font-semibold mb-2'>Web Development</h3>
                 <p className='text-sm text-gray-600'>
-                    To deliver innovative and reliable tech solutions that empower businesses to thrive in the digital age.
+                    Crafting responsive and dynamic websites that drive engagement and deliver seamless user experiences. <br></br>
+                    <a href="https://digital-website-with-tailwin-react.vercel.app/" className='text-blue-700 underline text-2xl font-bold'>My work</a>
                 </p>
                 <div>
                 </div>
+              </a>
             </div>
+            <a href="#app">
             <div className='bg-white w-72 rounded-3xl p-6 border 
             border-gray-100 shadow-xl lg:shadow-2xl transtion'>
                 <div className='ml-4 w-10 h-10 flex items-center justify-center
                 rounded-lg bg-blue-100 mb-4 '>  
-                    <RiGlobalFill  className='text-green-600'/>
+                    <a href="#app"><FaAppStore   className='text-green-600'/></a>
                 </div>
-                <h3 className='text-lg font-semibold mb-2'>Our Vision</h3>
+                <h3 className='text-lg font-semibold mb-2'>Mobile App Development</h3>
                 <p className='text-sm text-gray-600'>
-                    To be a global leader in tech services, recognized for our commitment to excellence, innovation, and customer satisfaction.
+                    Developing intuitive mobile applications that enhance user engagement and streamline business processes.
                 </p>
                 <div>
                 </div>
             </div>
+            </a>
             
         </motion.div>
 
