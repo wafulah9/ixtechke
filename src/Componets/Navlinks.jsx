@@ -78,7 +78,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* CTA Button */}
-        <a href="#contacts" className='cursor-pointer hidden md:block bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100'>
+        <a href="https://wa.link/tglcoa" className='cursor-pointer hidden md:block bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100'>
         <motion.button 
           variants={fadeIn('left', 0.3)}
           whileHover={{ scale: 1.05 }}
@@ -116,7 +116,7 @@ const Navbar = () => {
                 {link.label}
               </motion.a>
             ))}
-            <a href="#contacts" 
+            <a href="https://wa.link/tglcoa" 
             className="w-full flex items-center justify-center bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100 cursor-pointer">
             <motion.button 
               variants={fadeIn('up', 0.4)}
