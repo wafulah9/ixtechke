@@ -78,14 +78,16 @@ const Navbar = () => {
         </motion.div>
 
         {/* CTA Button */}
+        <a href="#contacts" className='cursor-pointer'>
         <motion.button 
           variants={fadeIn('left', 0.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="hidden md:block bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
         >
-          <a href="#contacts">Let's connect</a>
+          Let's connect
         </motion.button>
+        </a>
       </div>
 
       {/* Mobile Menu */}
