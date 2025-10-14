@@ -84,7 +84,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href="#contacts">Let's connect</a>
+          <a href="https://wa.link/tglcoa">Let's connect</a>
         </motion.button>
         </a>
       </div>
@@ -123,7 +123,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               >
-              <a href="#contacts">Let's connect</a>
+              <a href="https://wa.link/tglcoa">Let's connect</a>
             </motion.button>
             </a>
           </motion.div>

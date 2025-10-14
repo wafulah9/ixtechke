@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { fadeIn, textVariant } from "../Utilies/motion";
 
 const Footersection = () => {
@@ -41,6 +42,7 @@ const Footersection = () => {
                             <a href="https://x.com/ixtechke?s=21" className="text-gray-400 hover:text-white"><BsTwitterX /></a>
                             <a href="https://www.linkedin.com/in/wafulaa-michael-03767a38a/" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
                             <a href="http://www.tiktok.com/@ixtechke" className="text-gray-400 hover:text-white"><FaTiktok  /></a>
+                            <a href="https://wa.link/s7gof0" className="text-gray-400 hover:text-white"><FaSquareWhatsapp  /></a>
                         </div>
                     </div>
 
